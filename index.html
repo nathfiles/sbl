@@ -413,22 +413,17 @@
                 <!---about-->
                 <a href="./about.html" class="nav-link">About</a>
 
-
             </nav>
 
-
-
-            <!-- LANGUAGE -->
-
-
-
-
-            <!-- MOBILE MENU -->
-
-            <button class="mobile-menu" id="mobileMenu">
-                ☰
-            </button>
-
+            <!-- HEADER ACTIONS -->
+            <div class="header-actions">
+                <a href="./resources/resourceHtml/request.html" class="header-cta">
+                    Request Demo
+                </a>
+                <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">
+                    ☰
+                </button>
+            </div>
 
         </div>
 
@@ -514,11 +509,9 @@
 
 
                 <a href="./about.html" class="hero-button button-primary">
-
                     <span class="button-text">
-                        Explore SBL
+                        Explore SBL <span class="btn-arrow">→</span>
                     </span>
-
                 </a>
 
 
@@ -537,46 +530,11 @@
         </section>
         <!-- TECH BACKGROUND — ADD ONLY -->
         <div class="sbl-tech-bg">
-
             <div class="tech-grid"></div>
-
+            <div class="radial-center-glow"></div>
             <div class="tech-glow glow-1"></div>
             <div class="tech-glow glow-2"></div>
             <div class="tech-glow glow-3"></div>
-
-            <div class="tech-ring ring-1"></div>
-            <div class="tech-ring ring-2"></div>
-            <div class="tech-ring ring-3"></div>
-
-            <div class="circuit circuit-1">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="circuit circuit-2">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="circuit circuit-3">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="tech-node node-1"></div>
-            <div class="tech-node node-2"></div>
-            <div class="tech-node node-3"></div>
-            <div class="tech-node node-4"></div>
-            <div class="tech-node node-5"></div>
-            <div class="tech-node node-6"></div>
-
-            <div class="floating-tech tech-box-1">SBL</div>
-            <div class="floating-tech tech-box-2">&lt;/&gt;</div>
-            <div class="floating-tech tech-box-3">AI</div>
-
         </div>
 
 
@@ -587,29 +545,35 @@
 
         <section class="product-visual">
 
+            <!-- FLOATING INTERFACE BADGES (CRM, FINANCE, INVENTORY, AI) -->
+            <div class="dash-float-badge float-badge-left">
+                <div class="float-badge-icon pulse-gold">⚡</div>
+                <div class="float-badge-info">
+                    <span class="float-badge-tag">AI AUTOMATION</span>
+                    <strong>Invoice #9420 Auto-Reconciled</strong>
+                    <small>₹3,40,000 matched with GST portal</small>
+                </div>
+                <span class="float-badge-status-dot"></span>
+            </div>
 
-            <!-- LEFT IMAGE -->
+            <div class="dash-float-badge float-badge-right">
+                <div class="float-badge-icon pulse-blue">📈</div>
+                <div class="float-badge-info">
+                    <span class="float-badge-tag">CRM & PIPELINE</span>
+                    <strong>+34.8% Sales Conversion</strong>
+                    <small>18 high-intent enterprise deals</small>
+                </div>
+                <span class="float-badge-trend">↑</span>
+            </div>
 
-
-
-
-
-            <!-- LEFT BOTTOM -->
-
-
-
-
-
-            <!-- RIGHT IMAGE -->
-
-
-
-
-
-            <!-- RIGHT BOTTOM -->
-
-
-
+            <div class="dash-float-badge float-badge-bottom">
+                <div class="float-badge-icon">📦</div>
+                <div class="float-badge-info">
+                    <span class="float-badge-tag">LOGISTICS & STOCK</span>
+                    <strong>Optimal Fleet & Stock Health</strong>
+                    <small>4 Regional Warehouses Synchronized</small>
+                </div>
+            </div>
 
 
             <!-- =================================================
@@ -618,233 +582,293 @@
 
             <div class="dashboard-wrap" id="dashboardWrap">
 
-
                 <div class="dashboard" id="dashboard">
 
-
-                    <!-- DASHBOARD TOP -->
-
+                    <!-- DASHBOARD WINDOW HEADER -->
                     <div class="dashboard-top">
-
-
-                        <div style="
-                        font-size:18px;
-                        ">
-                            ◈
+                        <div class="dash-window-dots">
+                            <span class="dash-dot dot-red"></span>
+                            <span class="dash-dot dot-yellow"></span>
+                            <span class="dash-dot dot-green"></span>
                         </div>
 
-
-                        <div class="dashboard-brand">
-
-                            SBL Business
-
+                        <div class="dash-brand-block">
+                            <span class="dash-brand-icon">◈</span>
+                            <span class="dashboard-brand">SBL Business OS</span>
+                            <span class="dash-plan-badge">Enterprise v2.5</span>
                         </div>
-
 
                         <div class="dashboard-search">
-
-                            ⌕ Search
-
+                            <span class="dash-search-icon">⌕</span>
+                            <span class="dash-search-placeholder">Quick search modules, GST invoices, inventory, fleet...</span>
+                            <kbd class="dash-search-kbd">⌘K</kbd>
                         </div>
 
-
-                        <div class="dashboard-icons">
-
-                            ⊞　♧　◉
-
+                        <div class="dashboard-top-right">
+                            <div class="dashboard-live-pill">
+                                <span class="live-pulse-dot"></span>
+                                <span>Live Sync</span>
+                            </div>
+                            <div class="dash-notify-btn" title="System Notifications">
+                                <span>🔔</span>
+                                <i class="notify-badge"></i>
+                            </div>
+                            <div class="dash-user-profile">
+                                <span class="user-avatar">SB</span>
+                                <span class="user-role">Admin</span>
+                            </div>
                         </div>
-
-
                     </div>
-
 
 
                     <!-- DASHBOARD BODY -->
-
                     <div class="dashboard-body">
 
-
                         <!-- SIDEBAR -->
-
                         <aside class="dashboard-sidebar">
+                            <div class="dash-sidebar-group-label">WORKSPACE</div>
 
-
-                            <div class="active">
-                                ⌂　Home
+                            <div class="dash-sidebar-item active">
+                                <span class="sidebar-icon">⌂</span>
+                                <span>Overview</span>
+                                <span class="sidebar-pill">Live</span>
                             </div>
 
-                            <div>
-                                ◫　CRM
+                            <div class="dash-sidebar-item">
+                                <span class="sidebar-icon">◈</span>
+                                <span>ERP & Finance</span>
                             </div>
 
-                            <div>
-                                ▦　Sales
+                            <div class="dash-sidebar-item">
+                                <span class="sidebar-icon">◫</span>
+                                <span>CRM & Sales</span>
                             </div>
 
-                            <div>
-                                ▤　Inventory
+                            <div class="dash-sidebar-item">
+                                <span class="sidebar-icon">▤</span>
+                                <span>Smart Inventory</span>
                             </div>
 
-                            <div>
-                                ◈　Logistics
+                            <div class="dash-sidebar-item">
+                                <span class="sidebar-icon">⛟</span>
+                                <span>Logistics Fleet</span>
                             </div>
 
-                            <div>
-                                ♙　HR
+                            <div class="dash-sidebar-item">
+                                <span class="sidebar-icon">👥</span>
+                                <span>HR & Payroll</span>
                             </div>
 
-                            <div>
-                                ▣　Finance
+                            <div class="dash-sidebar-item">
+                                <span class="sidebar-icon">⚡</span>
+                                <span>AI Automation</span>
                             </div>
 
-                            <div>
-                                ⌁　Automation
+                            <div class="dash-sidebar-item">
+                                <span class="sidebar-icon">▥</span>
+                                <span>GST & Reports</span>
                             </div>
 
-                            <div>
-                                ▥　Reports
+                            <div class="dash-sidebar-bottom">
+                                <div class="sidebar-metric-mini">
+                                    <small>SYSTEM UPTIME</small>
+                                    <strong>99.99% Tier-4 SLA</strong>
+                                </div>
                             </div>
-
-
                         </aside>
 
 
-
-                        <!-- MAIN -->
-
+                        <!-- MAIN VIEW -->
                         <main class="dashboard-main">
 
+                            <!-- OVERVIEW HEADER -->
+                            <div class="dash-header-bar">
+                                <div>
+                                    <h3 class="dash-heading-title">Executive Operations Overview</h3>
+                                    <p class="dash-heading-subtitle">Real-time synchronized telemetry across all business units</p>
+                                </div>
+                                <div class="dash-action-group">
+                                    <span class="dash-period-select">Last 30 Days ▾</span>
+                                    <button class="dash-report-btn" type="button">⬇ Export</button>
+                                </div>
+                            </div>
 
+
+                            <!-- 4 ENTERPRISE KPI CARDS -->
                             <div class="dashboard-cards">
 
-
+                                <!-- KPI 1: REVENUE -->
                                 <div class="dash-card">
-
-                                    <small>
-                                        TOTAL REVENUE
-                                    </small>
-
-                                    <strong>
-                                        ₹84,50,000
-                                    </strong>
-
-                                    <div class="progress">
-
-                                        <i></i>
-
+                                    <div class="dash-card-header">
+                                        <small>TOTAL REVENUE</small>
+                                        <span class="dash-trend positive">+14.2%</span>
                                     </div>
-
+                                    <strong class="dash-kpi-val">₹84,50,000</strong>
+                                    <div class="dash-card-sub">
+                                        <span>Target: ₹88.0L</span>
+                                        <span>96.0% achieved</span>
+                                    </div>
+                                    <div class="progress">
+                                        <i style="width: 86%"></i>
+                                    </div>
                                 </div>
 
-
+                                <!-- KPI 2: ACTIVE ORDERS -->
                                 <div class="dash-card">
-
-                                    <small>
-                                        TOTAL ORDERS
-                                    </small>
-
-                                    <strong>
-                                        12,842
-                                    </strong>
-
-                                    <div class="progress">
-
-                                        <i style="width:67%"></i>
-
+                                    <div class="dash-card-header">
+                                        <small>ACTIVE ORDERS</small>
+                                        <span class="dash-trend positive">99.4% On-time</span>
                                     </div>
-
+                                    <strong class="dash-kpi-val">12,842</strong>
+                                    <div class="dash-card-sub">
+                                        <span>Dispatched: 11,480</span>
+                                        <span>In Transit: 1,362</span>
+                                    </div>
+                                    <div class="progress">
+                                        <i style="width: 91%"></i>
+                                    </div>
                                 </div>
 
+                                <!-- KPI 3: INVENTORY HEALTH -->
+                                <div class="dash-card">
+                                    <div class="dash-card-header">
+                                        <small>INVENTORY HEALTH</small>
+                                        <span class="dash-trend neutral">4 Warehouses</span>
+                                    </div>
+                                    <strong class="dash-kpi-val">98.2%</strong>
+                                    <div class="dash-card-sub">
+                                        <span>Stockouts: 0</span>
+                                        <span>Turnover: 12.4x</span>
+                                    </div>
+                                    <div class="progress">
+                                        <i style="width: 98%"></i>
+                                    </div>
+                                </div>
+
+                                <!-- KPI 4: AUTOMATION -->
+                                <div class="dash-card">
+                                    <div class="dash-card-header">
+                                        <small>AUTOMATED TASKS</small>
+                                        <span class="dash-trend gold">⚡ AI Active</span>
+                                    </div>
+                                    <strong class="dash-kpi-val">45,210</strong>
+                                    <div class="dash-card-sub">
+                                        <span>Hours Saved: 84.5h</span>
+                                        <span>Error Rate: 0.00%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <i style="width: 94%"></i>
+                                    </div>
+                                </div>
 
                             </div>
 
 
+                            <!-- PERFORMANCE CHART + TELEMETRY ROW -->
+                            <div class="dash-chart-row">
 
-                            <!-- CHART -->
+                                <div class="dash-chart-card">
+                                    <div class="chart-top-bar">
+                                        <div>
+                                            <span class="chart-title">GROWTH & OPERATIONAL REVENUE TRAJECTORY</span>
+                                            <div class="chart-legend-items">
+                                                <span class="legend-dot blue"></span> <span>Gross Revenue</span>
+                                                <span class="legend-dot gold"></span> <span>AI Projected Runway</span>
+                                            </div>
+                                        </div>
+                                        <div class="chart-time-pills">
+                                            <span class="time-pill">7D</span>
+                                            <span class="time-pill active">30D</span>
+                                            <span class="time-pill">1Y</span>
+                                        </div>
+                                    </div>
 
-                            <div class="chart">
+                                    <div class="chart-canvas-wrap">
+                                        <svg viewBox="0 0 700 170" preserveAspectRatio="none" class="dash-svg-chart">
+                                            <defs>
+                                                <linearGradient id="chartBlueGrad" x1="0" y1="0" x2="0" y2="1">
+                                                    <stop offset="0%" stop-color="#0878d8" stop-opacity="0.32" />
+                                                    <stop offset="100%" stop-color="#0878d8" stop-opacity="0.0" />
+                                                </linearGradient>
+                                            </defs>
 
+                                            <!-- Grid lines -->
+                                            <line x1="0" y1="35" x2="700" y2="35" stroke="#edf2f7" stroke-dasharray="3 3" />
+                                            <line x1="0" y1="75" x2="700" y2="75" stroke="#edf2f7" stroke-dasharray="3 3" />
+                                            <line x1="0" y1="115" x2="700" y2="115" stroke="#edf2f7" stroke-dasharray="3 3" />
 
-                                <div class="chart-title">
+                                            <!-- Area: Actual Revenue -->
+                                            <path d="M0 135 L60 128 L130 110 L200 118 L280 84 L350 96 L420 58 L490 68 L560 42 L630 48 L700 18 L700 170 L0 170 Z" fill="url(#chartBlueGrad)" />
+                                            <!-- Line: Actual Revenue -->
+                                            <polyline points="0,135 60,128 130,110 200,118 280,84 350,96 420,58 490,68 560,42 630,48 700,18" fill="none" stroke="#0878d8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 
-                                    BUSINESS PERFORMANCE
+                                            <!-- Line: AI Forecast Curve -->
+                                            <polyline points="0,150 60,144 130,126 200,132 280,102 350,110 420,78 490,82 560,60 630,58 700,32" fill="none" stroke="#ffc532" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round" />
 
+                                            <!-- Data point indicators -->
+                                            <circle cx="420" cy="58" r="4.5" fill="#0878d8" stroke="#ffffff" stroke-width="2" />
+                                            <circle cx="700" cy="18" r="5" fill="#0878d8" stroke="#ffffff" stroke-width="2.5" />
+                                        </svg>
+                                        <div class="chart-axis-months">
+                                            <span>Jun</span>
+                                            <span>Jul</span>
+                                            <span>Aug</span>
+                                            <span>Sep</span>
+                                            <span>Oct</span>
+                                            <span>Nov</span>
+                                        </div>
+                                    </div>
                                 </div>
 
-
-                                <svg viewBox="0 0 700 190" preserveAspectRatio="none">
-
-
-                                    <defs>
-
-                                        <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
-
-                                            <stop offset="0" stop-color="#0878d8" stop-opacity=".25" />
-
-                                            <stop offset="1" stop-color="#0878d8" stop-opacity="0" />
-
-                                        </linearGradient>
-
-                                    </defs>
-
-
-                                    <path d="
-                                    M0 155
-                                    L60 150
-                                    L120 132
-                                    L180 142
-                                    L240 108
-                                    L300 119
-                                    L360 77
-                                    L420 89
-                                    L480 60
-                                    L540 67
-                                    L600 40
-                                    L650 47
-                                    L700 20
-                                    L700 190
-                                    L0 190
-                                    Z
-                                    " fill="url(#chartGradient)" />
-
-
-                                    <polyline points="
-                                    0,155
-                                    60,150
-                                    120,132
-                                    180,142
-                                    240,108
-                                    300,119
-                                    360,77
-                                    420,89
-                                    480,60
-                                    540,67
-                                    600,40
-                                    650,47
-                                    700,20
-                                    " fill="none" stroke="#0878d8" stroke-width="4" />
-
-
-                                </svg>
-
+                                <!-- REALTIME TELEMETRY FEED -->
+                                <div class="dash-feed-card">
+                                    <div class="feed-header">
+                                        <span class="feed-title">LIVE TELEMETRY</span>
+                                        <span class="feed-badge">Active</span>
+                                    </div>
+                                    <div class="feed-list">
+                                        <div class="feed-item">
+                                            <div class="feed-icon-wrap green">✓</div>
+                                            <div class="feed-content">
+                                                <p><strong>GST E-Invoice #9420</strong> auto-generated and dispatched</p>
+                                                <small>Just now • Automated</small>
+                                            </div>
+                                        </div>
+                                        <div class="feed-item">
+                                            <div class="feed-icon-wrap blue">⛟</div>
+                                            <div class="feed-content">
+                                                <p><strong>Fleet #14</strong> reached Mumbai Logistics Hub</p>
+                                                <small>12 mins ago • GPS Verified</small>
+                                            </div>
+                                        </div>
+                                        <div class="feed-item">
+                                            <div class="feed-icon-wrap gold">⚡</div>
+                                            <div class="feed-content">
+                                                <p><strong>AI Auto-Reorder:</strong> 500 units steel sheets</p>
+                                                <small>38 mins ago • Safety Stock Trigger</small>
+                                            </div>
+                                        </div>
+                                        <div class="feed-item">
+                                            <div class="feed-icon-wrap purple">👥</div>
+                                            <div class="feed-content">
+                                                <p><strong>Payroll Batch:</strong> 120 employees credited</p>
+                                                <small>1 hour ago • Direct Deposit</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
-
 
                         </main>
 
-
                     </div>
-
 
                 </div>
 
-
             </div>
 
-
         </section>
-
 
     </main>
 
@@ -940,7 +964,46 @@
 
     </button>
 
-    <!-- =====================================================
+        <!-- =======================================================
+         TRUST & PLATFORM BENEFITS BAR
+    ======================================================== -->
+    <section class="sbl-trust-bar">
+        <div class="trust-container">
+            <div class="trust-header">
+                <span class="trust-pill">ENTERPRISE ASSURANCE</span>
+                <h3 class="trust-title">Engineered for High-Growth Operations</h3>
+                <p class="trust-subtitle">Trusted by fast-growing enterprises across manufacturing, supply chain, and services.</p>
+            </div>
+
+            <div class="trust-metrics-grid">
+                <div class="trust-metric-card">
+                    <div class="trust-metric-num">₹500Cr+</div>
+                    <div class="trust-metric-name">Annual Transaction Volume</div>
+                    <div class="trust-metric-desc">Handled seamlessly via integrated ERP & invoicing rails</div>
+                </div>
+
+                <div class="trust-metric-card">
+                    <div class="trust-metric-num">99.99%</div>
+                    <div class="trust-metric-name">Enterprise Cloud Uptime</div>
+                    <div class="trust-metric-desc">High-availability cluster with redundant failovers</div>
+                </div>
+
+                <div class="trust-metric-card">
+                    <div class="trust-metric-num">40%</div>
+                    <div class="trust-metric-name">Operational Cost Reduction</div>
+                    <div class="trust-metric-desc">Average reduction in administrative overhead within 90 days</div>
+                </div>
+
+                <div class="trust-metric-card">
+                    <div class="trust-metric-num">100%</div>
+                    <div class="trust-metric-name">GST & E-Way Bill Ready</div>
+                    <div class="trust-metric-desc">Direct government portal sync with instant digital validation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- =====================================================
      ZOHO-STYLE TESTIMONIAL SECTION
 ===================================================== -->
 
@@ -2780,7 +2843,39 @@
      SBL FOOTER
 ========================================================= -->
 
-    <footer class="sbl-footer" id="footer">
+        <!-- =======================================================
+         FINAL CONVERSION CTA
+    ======================================================== -->
+    <section class="sbl-final-cta-section">
+        <div class="final-cta-wrapper">
+            <div class="final-cta-badge">✦ SCALE YOUR BUSINESS</div>
+            <h2 class="final-cta-title">
+                Ready to Run Your Entire Business on One Intelligent Platform?
+            </h2>
+            <p class="final-cta-description">
+                Experience unified ERP, CRM, Inventory, Logistics, and AI Automation built for modern enterprise growth.
+            </p>
+            <div class="final-cta-buttons">
+                <a href="./resources/resourceHtml/request.html" class="hero-button button-primary">
+                    <span class="button-text">
+                        Request a live demo <span class="btn-arrow">→</span>
+                    </span>
+                </a>
+                <a href="./resources/resourceHtml/contact.html" class="hero-button button-outline">
+                    <span class="button-text">
+                        Talk to an Enterprise Specialist
+                    </span>
+                </a>
+            </div>
+            <div class="final-cta-guarantees">
+                <span>✓ Rapid 7-day deployment</span>
+                <span>✓ Dedicated customer success manager</span>
+                <span>✓ Bank-grade encryption & security</span>
+            </div>
+        </div>
+    </section>
+
+<footer class="sbl-footer" id="footer">
 
 
     <!-- =====================================================
